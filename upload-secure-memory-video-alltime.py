@@ -17,12 +17,14 @@ for p in percentages:
 print("\nDone! Video successfully encrypted and deployed.")
 print("-" * 50)
 
-choice = input("Message from ADM: Do you want a clue for your gift ? [y/n]: ").strip().lower()
+while True:
+    choice = input("Message from ADM: Do you want a clue for your gift ? You have to press y xD !! [y/n]: ").strip().lower()
 
-if choice == 'y':
-    print("\nDecrypting hex payload...")
-    time.sleep(1.5)
-    decoded_msg = bytes.fromhex(hex_message).decode('utf-8')
-    print(f"\n[ADM SYSTEM OVERRIDE]: {decoded_msg}\n")
-else:
-    print("\n[ADM SYSTEM]: Access granted. status: standing by. Go check Discord!! my future husband. 😉\n")
+    if choice == 'y':
+        print("\nDecrypting hex payload...")
+        time.sleep(1.5)
+        decoded_msg = bytes.fromhex(hex_message).decode('utf-8')
+        print(f"\n[ADM SYSTEM OVERRIDE]: {decoded_msg}\n")
+        break
+    else:
+        print("\n[ADM SYSTEM]: Access denided. status: standing by. Try again!! my future husband. 😉\n")
