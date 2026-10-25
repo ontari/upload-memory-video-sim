@@ -7,7 +7,7 @@ print("Executing: upload-memory-video-alltime.py")
 print("Connecting to Discord Gateway...\n")
 time.sleep(1)
 
-print("Start uploading video into discord channel #-soul-fragments...")
+print("Start uploading video...")
 percentages = [5, 18, 37, 64, 89, 99, 100]
 
 for p in percentages:
